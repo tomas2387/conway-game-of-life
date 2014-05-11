@@ -1,16 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title></title>
+    <title>Conway's game of life</title>
 </head>
 <body>
     <h1>Conway's game of life</h1>
+    <script src="js/src/requestAnimationFrameCrossBrowser.js"></script>
     <script src="js/src/grid.js"></script>
-    <script>
-        var grid = new Grid(200, 100, 4);
-        grid.setPoint(0, 0);
-        grid.setPoint(100, 90);
-        grid.setPoint(199, 99);
-    </script>
+    <script src="js/src/map_processor.js"></script>
+    <script src="js/src/init.js"></script>
 </body>
 </html>

@@ -13,7 +13,11 @@ var Grid = function(width, height, cellSize) {
 
 Grid.prototype = {
     setPoint: function(x, y) {
-        this.ctx.fillStyle = "#000000";
+        var number1 = (Math.floor(Math.random()*9));
+        var number2 = (Math.floor(Math.random()*9));
+        var number3 = (Math.floor(Math.random()*9));
+
+        this.ctx.fillStyle = "#"+number1+""+number2+""+number3;
         this.ctx.fillRect(x * this.cellSize, y * this.cellSize, this.cellSize, this.cellSize);
     },
 
